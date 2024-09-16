@@ -23,8 +23,7 @@ To get started, make sure you have configured your Azure provider. You can use t
 
 ```hcl
 module "network_security_group" {
-  source                  = "SyncArcs/network-security-group/azure"
-  version                 = "1.0.1"
+  source                  = "git::https://github.com/SyncArcs/terraform-azure-network-security-group.git?ref=v1.0.0"
   name                    = "app"
   environment             = "test"
   resource_group_name     = module.resource_group.resource_group_name
